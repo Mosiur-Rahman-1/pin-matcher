@@ -119,7 +119,6 @@ document.getElementById ("submit-button").addEventListener ("click", function ()
 
         if (result === 0) {
             document.getElementById ("submit-button").style.opacity = 0.6;
-            // document.getElementById ("submit-button").style.cursor = "not-allowed";
             document.getElementById ("submit-button").disabled = true;
             document.getElementById ("action-message-number").style.display = "none";
             document.getElementById ("action-message").innerText = "Please refresh the Browser and try again";
