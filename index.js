@@ -4,7 +4,7 @@
 
 document.getElementById ("generate-pin-btn").addEventListener ("click", function () {
 
-    var randomNumber = Math.round (Math.random () * (9999 - 1000) + 1000);
+    let randomNumber = Math.round (Math.random () * (9999 - 1000) + 1000);
     document.getElementById ("generate-output-screen").value = randomNumber;
 })
 
@@ -14,71 +14,71 @@ document.getElementById ("generate-pin-btn").addEventListener ("click", function
 
 document.getElementById ("btn-zero").addEventListener ("click", function () {
 
-    var btnZero = document.getElementById ("calculator-output-screen").value += 0;
-    var btnZeroNumber = parseInt(btnZero);
+    let btnZero = document.getElementById ("calculator-output-screen").value += 0;
+    let btnZeroNumber = parseInt(btnZero);
     return btnZeroNumber;
 })
 
 document.getElementById ("btn-one").addEventListener ("click", function () {
 
-    var btnOne = document.getElementById ("calculator-output-screen").value += 1;
-    var btnOneNumber = parseInt(btnOne);
+    let btnOne = document.getElementById ("calculator-output-screen").value += 1;
+    let btnOneNumber = parseInt(btnOne);
     return btnOneNumber;
 })
 
 document.getElementById ("btn-two").addEventListener ("click", function () {
 
-    var btnTwo = document.getElementById ("calculator-output-screen").value += 2;
-    var btnTwoNumber = parseInt(btnTwo);
+    let btnTwo = document.getElementById ("calculator-output-screen").value += 2;
+    let btnTwoNumber = parseInt(btnTwo);
     return btnTwoNumber;
 })
 
 document.getElementById ("btn-three").addEventListener ("click", function () {
 
-    var btnThree = document.getElementById ("calculator-output-screen").value += 3;
-    var btnThreeNumber = parseInt(btnThree);
+    let btnThree = document.getElementById ("calculator-output-screen").value += 3;
+    let btnThreeNumber = parseInt(btnThree);
     return btnThreeNumber;
 })
 
 document.getElementById ("btn-four").addEventListener ("click", function () {
 
-    var btnFour = document.getElementById ("calculator-output-screen").value += 4;
-    var btnFourNumber = parseInt(btnFour);
+    let btnFour = document.getElementById ("calculator-output-screen").value += 4;
+    let btnFourNumber = parseInt(btnFour);
     return btnFourNumber;
 })
 
 document.getElementById ("btn-five").addEventListener ("click", function () {
 
-    var btnFive = document.getElementById ("calculator-output-screen").value += 5;
-    var btnFiveNumber = parseInt(btnFive);
+    let btnFive = document.getElementById ("calculator-output-screen").value += 5;
+    let btnFiveNumber = parseInt(btnFive);
     return btnFiveNumber;
 })
 
 document.getElementById ("btn-six").addEventListener ("click", function () {
 
-    var btnSix = document.getElementById ("calculator-output-screen").value += 6;
-    var btnSixNumber = parseInt(btnSix);
+    let btnSix = document.getElementById ("calculator-output-screen").value += 6;
+    let btnSixNumber = parseInt(btnSix);
     return btnSixNumber;
 })
 
 document.getElementById ("btn-seven").addEventListener ("click", function () {
 
-    var btnSeven = document.getElementById ("calculator-output-screen").value += 7;
-    var btnSevenNumber = parseInt(btnSeven);
+    let btnSeven = document.getElementById ("calculator-output-screen").value += 7;
+    let btnSevenNumber = parseInt(btnSeven);
     return btnSevenNumber;
 })
 
 document.getElementById ("btn-eight").addEventListener ("click", function () {
 
-    var btnEight = document.getElementById ("calculator-output-screen").value += 8;
-    var btnEightNumber = parseInt(btnEight);
+    let btnEight = document.getElementById ("calculator-output-screen").value += 8;
+    let btnEightNumber = parseInt(btnEight);
     return btnEightNumber;
 })
 
 document.getElementById ("btn-nine").addEventListener ("click", function () {
 
-    var btnNine = document.getElementById ("calculator-output-screen").value += 9;
-    var btnNineNumber = parseInt(btnNine);
+    let btnNine = document.getElementById ("calculator-output-screen").value += 9;
+    let btnNineNumber = parseInt(btnNine);
     return btnNineNumber;
 })
 
@@ -86,13 +86,13 @@ document.getElementById ("btn-nine").addEventListener ("click", function () {
 
 document.getElementById ("btn-backspace").addEventListener ("click", function () {
 
-    var btnBackspace = document.getElementById ("calculator-output-screen").value;
+    let btnBackspace = document.getElementById ("calculator-output-screen").value;
     document.getElementById ("calculator-output-screen").value = btnBackspace.substring (0, btnBackspace.length - 1);
 })
 
 document.getElementById ("btn-clear").addEventListener ("click", function () {
 
-    var btnClear = document.getElementById ("calculator-output-screen").value = "";
+    let btnClear = document.getElementById ("calculator-output-screen").value = "";
     return btnClear;
 })
 
@@ -101,8 +101,8 @@ document.getElementById ("btn-clear").addEventListener ("click", function () {
 
 document.getElementById ("submit-button").addEventListener ("click", function () {
 
-    var generateOutputScreen = document.getElementById ("generate-output-screen").value;
-    var calculatorOutputScreen = document.getElementById ("calculator-output-screen").value;
+    let generateOutputScreen = document.getElementById ("generate-output-screen").value;
+    let calculatorOutputScreen = document.getElementById ("calculator-output-screen").value;
 
     if (generateOutputScreen == calculatorOutputScreen) {
 
@@ -112,9 +112,9 @@ document.getElementById ("submit-button").addEventListener ("click", function ()
         document.getElementById ("wrong-message").style.display = "block";
         document.getElementById ("right-message").style.display = "none";
 
-        var actionMessage = document.getElementById ("action-message-number").innerText;
-        var actionMessageNumber = parseInt(actionMessage);
-        var result = actionMessageNumber - 1;
+        let actionMessage = document.getElementById ("action-message-number").innerText;
+        let actionMessageNumber = parseInt(actionMessage);
+        let result = actionMessageNumber - 1;
         document.getElementById ("action-message-number").innerText = result;
 
         if (result === 0) {
